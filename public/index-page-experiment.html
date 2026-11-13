@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio and customer feedback website">
+  <title>My Portfolio | Professional Profile</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo">My<span>Portfolio.</span></a>
+
+   <nav class="main-nav" aria-label="Main navigation">
+  <a href="#forms" class="nav-link active" data-page="forms">Forms</a>
+  <a href="#about" class="nav-link" data-page="about">About Me</a>
+  <a href="#feedback" class="nav-link" data-page="feedback">Customer Feedback</a>
+</nav>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+      <h1>Build your profile.<br><span>Share your journey.</span></h1>
+      <p class="hero-text">
+        Create your professional profile, explore saved portfolios,
+        and share your feedback.
+      </p>
+      <a href="#forms" class="primary-button">Create a Profile</a>
+    </section>
+
+    <section id="forms" class="page-section app-page active-page"></section>
+      <div class="section-heading">
+        <p class="eyebrow">GET STARTED</p>
+        <h2>Portfolio Forms</h2>
+        <p>Enter your personal, educational, and professional details.</p>
+      </div>
+      <div id="portfolio-form-container"></div>
+    </section>
+
+   <section id="about" class="page-section app-page"></section>
+      <div class="section-heading">
+        <p class="eyebrow">MY JOURNEY</p>
+        <h2>About Me</h2>
+        <p>Explore portfolio profiles saved in the database.</p>
+      </div>
+      <div id="portfolio-list"></div>
+    </section>
+
+    <section id="feedback" class="page-section app-page"></section>
+      <div class="section-heading">
+        <p class="eyebrow">YOUR VOICE MATTERS</p>
+        <h2>Customer Feedback</h2>
+        <p>Share your experience and help us improve.</p>
+      </div>
+      <div id="feedback-form-container"></div>
+      <div id="feedback-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with care · My Portfolio</p>
+  </footer>
+
+  <div id="notification" class="notification" role="status"
+       aria-live="polite"></div>
+
+  <script src="/js/app.js" defer></script>
+  <script src="/js/portfolio.js" defer></script>
+  <script src="/js/feedback.js" defer></script>
+</body>
+</html>
